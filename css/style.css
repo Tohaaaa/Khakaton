@@ -1,0 +1,134 @@
+body {
+    font-family: 'Merriweather', serif;
+    display: block;
+    margin: 0;
+}
+
+.bg-img {
+    background: url(../img/Fon.jpeg);
+}
+
+.container {
+    max-width: 800px;
+    min-height: 500px;
+    border: 10px solid white;
+    margin: 0 auto;
+    background: white;
+}
+
+.header {
+    display: flex;
+    height: 150px;
+}
+
+.header-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    font-size: 30px;
+    background: url(../img/Fon\ header-l.jpeg) no-repeat center center / cover;
+    color: white;
+    margin-right: 8px;
+}
+
+.title {
+    position: relative;
+    z-index: 1;
+}
+
+.header-left::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+}
+
+.header-right {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background: url(../img/myphoto.JPG) center center / cover;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    background: rgb(154, 219, 154);
+    margin: 3px 0;
+}
+
+.nav li a {
+    display: flex;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    padding: 20px;
+    border-right: 1px solid rgb(86, 141, 86);
+    transition: background 0.3s ease;
+} 
+
+.nav li a:hover {
+    background: rgb(202, 236, 202);
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.content {
+    width: 70%;
+    padding: 20px;
+}
+.content p {
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.content li{
+    list-style-type: none;
+}
+
+.content ul {
+    display: flex;
+    flex-direction: column;
+}
+
+a img {
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar {
+    padding: 20px;
+    width: 30%;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+}
+
+.skills {
+    padding: 0;
+}
+
+.skills li {
+    padding: 10px 0;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+}
